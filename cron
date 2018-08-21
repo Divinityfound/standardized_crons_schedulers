@@ -1,0 +1,49 @@
+# MoH HoD DoM MoY DoW COMMAND
+#  *   *   *   *   *
+
+# AUTO_CRON_SCHEDULER_PATH
+AUTO_CRON_SCHEDULER_PATH=/YOUR/PATH/HERE/THE/cron_schedulers
+TARGET_SCRIPT_PATH=/YOUR/TARGET/SCRIPT/PATH
+
+# Clockwork
+*    *    *    *    * $AUTO_CRON_SCHEDULER_PATH/minutes/1_minute.sh $TARGET_SCRIPT_PATH
+*/5  *    *    *    * $AUTO_CRON_SCHEDULER_PATH/minutes/5_minute.sh $TARGET_SCRIPT_PATH
+*/10 *    *    *    * $AUTO_CRON_SCHEDULER_PATH/minutes/10_minute.sh $TARGET_SCRIPT_PATH
+*/15 *    *    *    * $AUTO_CRON_SCHEDULER_PATH/minutes/15_minute.sh $TARGET_SCRIPT_PATH
+*/20 *    *    *    * $AUTO_CRON_SCHEDULER_PATH/minutes/20_minute.sh $TARGET_SCRIPT_PATH
+*/30 *    *    *    * $AUTO_CRON_SCHEDULER_PATH/minutes/30_minute.sh $TARGET_SCRIPT_PATH
+0    *    *    *    * $AUTO_CRON_SCHEDULER_PATH/hours/1_hour.sh $TARGET_SCRIPT_PATH
+0    */2  *    *    * $AUTO_CRON_SCHEDULER_PATH/hours/2_hour.sh $TARGET_SCRIPT_PATH
+0    */3  *    *    * $AUTO_CRON_SCHEDULER_PATH/hours/3_hour.sh $TARGET_SCRIPT_PATH
+0    */4  *    *    * $AUTO_CRON_SCHEDULER_PATH/hours/4_hour.sh $TARGET_SCRIPT_PATH
+0    */6  *    *    * $AUTO_CRON_SCHEDULER_PATH/hours/6_hour.sh $TARGET_SCRIPT_PATH
+0    */8  *    *    * $AUTO_CRON_SCHEDULER_PATH/hours/8_hour.sh $TARGET_SCRIPT_PATH
+0    */12 *    *    * $AUTO_CRON_SCHEDULER_PATH/hours/12_hour.sh $TARGET_SCRIPT_PATH
+0    0    *    *    * $AUTO_CRON_SCHEDULER_PATH/days/1_day.sh $TARGET_SCRIPT_PATH
+0    0    */2  *    * $AUTO_CRON_SCHEDULER_PATH/days/2_day.sh $TARGET_SCRIPT_PATH
+0    0    */3  *    * $AUTO_CRON_SCHEDULER_PATH/days/3_day.sh $TARGET_SCRIPT_PATH
+0    0    */4  *    * $AUTO_CRON_SCHEDULER_PATH/days/4_day.sh $TARGET_SCRIPT_PATH
+0    0    */5  *    * $AUTO_CRON_SCHEDULER_PATH/days/5_day.sh $TARGET_SCRIPT_PATH
+0    0    */6  *    * $AUTO_CRON_SCHEDULER_PATH/days/6_day.sh $TARGET_SCRIPT_PATH
+0    0    */7  *    * $AUTO_CRON_SCHEDULER_PATH/weeks/1_week.sh $TARGET_SCRIPT_PATH
+0    0    */14 *    * $AUTO_CRON_SCHEDULER_PATH/weeks/2_week.sh $TARGET_SCRIPT_PATH
+0    0    */21 *    * $AUTO_CRON_SCHEDULER_PATH/weeks/3_week.sh $TARGET_SCRIPT_PATH
+0    0    */28 *    * $AUTO_CRON_SCHEDULER_PATH/weeks/4_week.sh $TARGET_SCRIPT_PATH
+0    0    1    *    * $AUTO_CRON_SCHEDULER_PATH/months/1_month.sh $TARGET_SCRIPT_PATH
+0    0    1    */2  * $AUTO_CRON_SCHEDULER_PATH/months/2_month.sh $TARGET_SCRIPT_PATH
+0    0    1    */3  * $AUTO_CRON_SCHEDULER_PATH/months/3_month.sh $TARGET_SCRIPT_PATH
+0    0    1    */4  * $AUTO_CRON_SCHEDULER_PATH/months/4_month.sh $TARGET_SCRIPT_PATH
+0    0    1    */6  * $AUTO_CRON_SCHEDULER_PATH/months/6_month.sh $TARGET_SCRIPT_PATH
+0    0    1    */12 * $AUTO_CRON_SCHEDULER_PATH/yearly.sh $TARGET_SCRIPT_PATH
+
+# Once per Week, Day of Week
+0    0    *    *    0 $AUTO_CRON_SCHEDULER_PATH/dayOfWeek/sunday.sh $TARGET_SCRIPT_PATH
+0    0    *    *    1 $AUTO_CRON_SCHEDULER_PATH/dayOfWeek/monday.sh $TARGET_SCRIPT_PATH
+0    0    *    *    2 $AUTO_CRON_SCHEDULER_PATH/dayOfWeek/tuesday.sh $TARGET_SCRIPT_PATH
+0    0    *    *    3 $AUTO_CRON_SCHEDULER_PATH/dayOfWeek/wednesday.sh $TARGET_SCRIPT_PATH
+0    0    *    *    4 $AUTO_CRON_SCHEDULER_PATH/dayOfWeek/thursday.sh $TARGET_SCRIPT_PATH
+0    0    *    *    5 $AUTO_CRON_SCHEDULER_PATH/dayOfWeek/friday.sh $TARGET_SCRIPT_PATH
+0    0    *    *    6 $AUTO_CRON_SCHEDULER_PATH/dayOfWeek/sunday.sh $TARGET_SCRIPT_PATH
+
+unset AUTO_CRON_SCHEDULER_PATH
+unset TARGET_SCRIPT_PATH
